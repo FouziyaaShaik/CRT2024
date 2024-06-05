@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    if(-6)
+     {
+       printf("JAVA");
+     }
+     else
+      {
+         printf("PYTHON");
+      }
+ return 0;
+}

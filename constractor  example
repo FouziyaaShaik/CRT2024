@@ -1,0 +1,16 @@
+import java.util.*;
+class Test 
+{
+    void show()
+    {
+    System.out.println("show method");
+    }
+    public static void main(String[] args) 
+    {
+        Test t1=new Test();
+        t1.show();
+    }
+}
+show method
+
+=== Code Execution Successful ===

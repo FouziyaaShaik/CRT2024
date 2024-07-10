@@ -1,0 +1,30 @@
+import java.util.*;
+class Student
+{
+    int admno;
+    String name;
+    Student(int x, String y)
+    {
+        admno=x;
+        name=y;
+    }
+    void show()
+    {
+        System.out.println(admno+" "+name);
+    }
+}
+public class Main
+{
+   public static void main(String args[])
+   {
+       Student s1=new Student(1,"a");
+       s1.show();
+       Student s2=new Student(2,"b");
+       s2.show();
+   }   
+}
+
+1 a
+2 b
+
+=== Code Execution Successful ===

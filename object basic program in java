@@ -1,0 +1,15 @@
+import java.util.*;
+class Student
+{
+    int admno=590;
+    String name="sk.fouziya";
+    public static void main(String args[])
+    {
+        Student s1=new Student();
+        System.out.println(s1.admno+" "+s1.name);
+    }
+}
+
+590 sk.fouziya
+
+=== Code Execution Successful ===

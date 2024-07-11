@@ -1,0 +1,15 @@
+import java.util.*;
+class Test
+{
+    public static void main(String args[])
+    {
+        String s1=new String("fouziyashaik");
+        System.out.println(s1);
+        s1.concat ("language");
+        System.out.println(s1);
+    }
+}
+fouziyashaik
+fouziyashaik
+
+=== Code Execution Successful ===

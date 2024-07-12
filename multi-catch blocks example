@@ -1,0 +1,28 @@
+import java.util.*;
+class Test
+{
+    public static void main(String args[])
+    {
+        try
+        {
+            System.out.println(10/2);
+            int a[]={34,65,12};
+            System.out.println(a[3]);
+        }
+        catch(ArithmeticException e)
+        {
+        System.out.println(10/2);
+        }
+        catch(ArrayIndexOutOfBoundsException ae)
+        {
+            System.out.println("Array out of the range");
+        }
+        System.out.println("End of the program");
+    }
+}
+
+5
+Array out of the range
+End of the program
+
+=== Code Execution Successful ===

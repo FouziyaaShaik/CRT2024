@@ -1,0 +1,160 @@
+import java.util.*;
+  class A extends Thread
+ {
+   public void run()
+   {
+     for(int i=0;i<=5;i++)
+     {
+       System.out.println("from thread A:"+i);
+     }
+     System.out.println("exit from A");
+   }  
+}
+ class B extends Thread
+ {
+   public void run()
+   {
+     for(int j=0;j<=5;j++)
+     {
+       System.out.println("from thread B:"+j);
+     }
+     System.out.println("exit from B");
+   }  
+}
+ class C extends Thread
+ {
+   public void run()
+   {
+     for(int k=0;k<=5;k++)
+     {
+       System.out.println("from thread C:"+k);
+     }
+     System.out.println("exit from C");
+   }  
+}
+ public class Main
+{
+ public static void main(String args[])
+  {
+   A a1=new A();
+   B b1=new B();
+   C c1=new C();
+   a1.start();
+   b1.start();
+   c1.start();
+   System.out.println(Thread.currentThread().getName());
+   System.out.println(a1.getName());
+   System.out.println(b1.getName());
+   System.out.println(c1.getName());
+   c1.setName("Fouziyashaik ");
+   System.out.println(c1.getName());
+ }
+}
+main
+Thread-0
+Thread-1
+Thread-2
+Fouziyashaik 
+from thread B:0
+from thread B:1
+from thread B:2
+from thread B:3
+from thread B:4
+from thread B:5
+exit from B
+from thread A:0
+from thread A:1
+from thread A:2
+from thread A:3
+from thread A:4
+from thread A:5
+exit from A
+from thread C:0
+from thread C:1
+from thread C:2
+from thread C:3
+from thread C:4
+from thread C:5
+exit from C
+
+=== Code Execution Successful ===
+import java.util.*;
+  class A extends Thread
+ {
+   public void run()
+   {
+     for(int i=0;i<=5;i++)
+     {
+       System.out.println("from thread A:"+i);
+     }
+     System.out.println("exit from A");
+   }  
+}
+ class B extends Thread
+ {
+   public void run()
+   {
+     for(int j=0;j<=5;j++)
+     {
+       System.out.println("from thread B:"+j);
+     }
+     System.out.println("exit from B");
+   }  
+}
+ class C extends Thread
+ {
+   public void run()
+   {
+     for(int k=0;k<=5;k++)
+     {
+       System.out.println("from thread C:"+k);
+     }
+     System.out.println("exit from C");
+   }  
+}
+ public class Main
+{
+ public static void main(String args[])
+  {
+   A a1=new A();
+   B b1=new B();
+   C c1=new C();
+   a1.start();
+   b1.start();
+   c1.start();
+   System.out.println(Thread.currentThread().getName());
+   System.out.println(a1.getName());
+   System.out.println(b1.getName());
+   System.out.println(c1.getName());
+   b1.setName("Fouziyashaik ");
+   System.out.println(b1.getName());
+ }
+}
+main
+Thread-0
+Thread-1
+Thread-2
+Fouziyashaik 
+from thread C:0
+from thread C:1
+from thread C:2
+from thread B:0
+from thread B:1
+from thread B:2
+from thread B:3
+from thread B:4
+from thread B:5
+exit from B
+from thread A:0
+from thread A:1
+from thread A:2
+from thread A:3
+from thread A:4
+from thread A:5
+exit from A
+from thread C:3
+from thread C:4
+from thread C:5
+exit from C
+
+=== Code Execution Successful ===

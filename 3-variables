@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    int b=20;
+    int c=30;
+    {
+        int c=b-a;
+        
+        printf("\n%d",c);
+    }
+    {
+       printf("\n%d",c);
+    }
+} 
+
+o/p : 
+10
+30
+
+=== Code Execution Successful ===

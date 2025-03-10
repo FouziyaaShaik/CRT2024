@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+    int a=10;
+    int b=20;
+    printf("before swapping a and b are: %d %d",a,b);
+    a=a^b;
+    b=a^b;
+    a=a^b;
+    printf("\n after swapping a and b are : %d %d", a,b);
+} 
+o/p : 
+
+before swapping a and b are: 10 20
+ after swapping a and b are : 20 10
+
+=== Code Execution Successful ===
